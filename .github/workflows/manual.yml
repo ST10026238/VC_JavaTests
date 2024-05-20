@@ -42,12 +42,12 @@ jobs:
        # copy compiled classes to test directory 
       - name : copy compiled classes to testresources directory 
         working-directory: ./VC_UnitTestEg1/src/vc_unittesteg1
-        run: cp -t  "../../test/st101173" Person.class VC_UnitTestEg1.class 
+        run: cp -t  "../../test/vc_unittesteg1" Person.class VC_UnitTestEg1.class 
         
         #copy compiled tests 
       - name : copy compiled Test classes to testresources directory 
         working-directory: ./VC_UnitTestEg1/test/vc_unittesteg1
-        run: cp -t  "../../testresources/" Message.class ST101173.class Response.class
+        run: cp -t  "../../testresources/" Message.class Person.class Response.class
         
         # list contents or directory
       - name: List contents test package
