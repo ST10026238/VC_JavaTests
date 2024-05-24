@@ -46,8 +46,8 @@ jobs:
         
         #copy compiled tests 
       - name : copy compiled Test classes to testresources directory 
-        working-directory: ./VC_UnitTestEg1/src/vc_unittesteg1
-        run: cp -t  "../../test/vc_unittesteg1" PersonTest.class 
+        working-directory: ./VC_UnitTestEg1/test/vc_unittesteg1
+        run: cp -t  "../../testresources/" PersonTest.class 
         
         # list contents or directory
       - name: List contents test package
